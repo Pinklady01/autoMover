@@ -1,14 +1,19 @@
 package blablacar.core;
 
+import blablacar.core.parser.Parser;
+import blablacar.core.parser.Token;
+
+import java.util.List;
+
 public class AutoMover {
     private int coordX;
     private int coordY;
-    private CardinalPoint orientation;
+    private Directions orientation;
 
     public AutoMover() {
         this.coordX = 0;
         this.coordY = 0;
-        this.orientation = CardinalPoint.NORTH;
+        this.orientation = new North();
     }
 
     public int getCoordX() {
@@ -27,11 +32,27 @@ public class AutoMover {
         this.coordY = coordY;
     }
 
-    public CardinalPoint getOrientation() {
+    public Directions getOrientation() {
         return orientation;
     }
 
-    public void setOrientation(CardinalPoint orientation) {
+    public void setOrientation(Directions orientation) {
         this.orientation = orientation;
     }
+
+    public void move(final String movements){
+        Parser aParser = new Parser();
+        final List<Token> tokens = aParser.parse(movements);
+        for(Token tok : tokens) {
+            if (tok.getValue() == "L") {
+                getOrientation().turnLeft();
+            }else if(tok.getValue() == "R") {
+                getOrientation().turnRight();
+            }else if(tok.getValue() == "F"){
+            }
+            else if(tok.getValue() == "B") {
+            }
+        }
+    }
+
 }

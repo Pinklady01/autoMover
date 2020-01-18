@@ -2,14 +2,12 @@ package blablacar.core;
 
 public class West implements Directions {
     @Override
-    public CardinalPoint turnLeft() {
-
-        return CardinalPoint.SOUTH;
+    public Directions turnLeft() {
+        return new South();
     }
 
     @Override
-    public CardinalPoint turnRight() {
-
-        return CardinalPoint.NORTH;
+    public Directions turnRight() {
+        return new North();
     }
 }

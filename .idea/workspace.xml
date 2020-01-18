@@ -2,15 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f8c35fe-9b3e-4051-998f-875155917a66" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/blablacar/core/Directions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/blablacar/core/East.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/blablacar/core/North.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/blablacar/core/South.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/blablacar/core/West.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/blablacar/core/parser/Parser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/blablacar/core/parser/Token.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/blablacar/core/AutoMover.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/blablacar/core/AutoMover.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/blablacar/core/CardinalPoint.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/blablacar/core/Directions.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/blablacar/core/Directions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/blablacar/core/East.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/blablacar/core/East.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/blablacar/core/North.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/blablacar/core/North.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/blablacar/core/South.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/blablacar/core/South.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/blablacar/core/West.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/blablacar/core/West.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,8 +21,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -168,7 +167,7 @@
       <updated>1579266223079</updated>
       <workItem from="1579266225301" duration="962000" />
       <workItem from="1579271197899" duration="3952000" />
-      <workItem from="1579381383988" duration="3839000" />
+      <workItem from="1579381383988" duration="6175000" />
     </task>
     <task id="LOCAL-00001" summary="Creation of the AutoMover,the CardinanalPoint enum and the Grid class.">
       <created>1579384257499</created>
@@ -177,7 +176,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579384257499</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add the Interface Directions and the orientations classes">
+      <created>1579385662603</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1579385662603</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,6 +202,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Creation of the AutoMover,the CardinanalPoint enum and the Grid class." />
-    <option name="LAST_COMMIT_MESSAGE" value="Creation of the AutoMover,the CardinanalPoint enum and the Grid class." />
+    <MESSAGE value="Add the Interface Directions and the orientations classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add the Interface Directions and the orientations classes" />
   </component>
 </project>
