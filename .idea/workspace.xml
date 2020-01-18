@@ -2,23 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f8c35fe-9b3e-4051-998f-875155917a66" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/blablacar/core/Directions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/blablacar/core/East.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/blablacar/core/North.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/blablacar/core/South.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/blablacar/core/West.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/blablacar/core/parser/Parser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/blablacar/core/parser/Token.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cli/rpn.cli.iml" beforeDir="false" afterPath="$PROJECT_DIR$/cli/autoMover.cli.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cli/target/classes/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cli/target/classes/blablacar/cli/Application.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cli/target/test-classes/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/rpn.core.iml" beforeDir="false" afterPath="$PROJECT_DIR$/core/autoMover.core.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/autoMover.core-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/test-classes/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rpn.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,6 +23,7 @@
       <list>
         <option value="Enum" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -175,8 +168,16 @@
       <updated>1579266223079</updated>
       <workItem from="1579266225301" duration="962000" />
       <workItem from="1579271197899" duration="3952000" />
-      <workItem from="1579381383988" duration="2324000" />
+      <workItem from="1579381383988" duration="3839000" />
     </task>
+    <task id="LOCAL-00001" summary="Creation of the AutoMover,the CardinanalPoint enum and the Grid class.">
+      <created>1579384257499</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1579384257499</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,5 +193,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Creation of the AutoMover,the CardinanalPoint enum and the Grid class." />
+    <option name="LAST_COMMIT_MESSAGE" value="Creation of the AutoMover,the CardinanalPoint enum and the Grid class." />
   </component>
 </project>
