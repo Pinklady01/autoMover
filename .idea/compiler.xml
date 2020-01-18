@@ -6,20 +6,20 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="rpn.core" />
-        <module name="rpn.cli" />
+        <module name="autoMover.cli" />
+        <module name="autoMover.core" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="autoMover.cli" target="11" />
+      <module name="autoMover.core" target="11" />
       <module name="rpn" target="11" />
-      <module name="rpn.cli" target="11" />
-      <module name="rpn.core" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="rpn.cli" options="-Xlint:all -Xlint:-processing -Xlint:-serial -Werror" />
-      <module name="rpn.core" options="-Xlint:all -Xlint:-processing -Xlint:-serial -Werror" />
+      <module name="autoMover.cli" options="-Xlint:all -Xlint:-processing -Xlint:-serial -Werror" />
+      <module name="autoMover.core" options="-Xlint:all -Xlint:-processing -Xlint:-serial -Werror" />
     </option>
   </component>
 </project>
