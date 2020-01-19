@@ -8,7 +8,7 @@ public class Grid {
     public Grid(int coordXMax, int coordYMax) {
         this.coordXMax = coordXMax;
         this.coordYMax = coordYMax;
-        this.anAutoMower = new AutoMower();
+        this.anAutoMower = new AutoMower(coordXMax,coordYMax);
     }
 
     private int getCoordXMax() {

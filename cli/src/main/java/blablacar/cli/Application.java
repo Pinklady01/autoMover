@@ -1,7 +1,5 @@
 package blablacar.cli;
 
-
-import blablacar.core.AutoMower;
 import blablacar.core.Grid;
 import blablacar.core.parser.Parser;
 import blablacar.core.parser.Token;
@@ -29,12 +27,16 @@ class Application {
 
             for (Token tok : tokens) {
                 if (!tok.isInt()) {
-                    System.out.println("Please enter Integer");
+                    System.out.println("Please enter two positive Integers\n");
                     continue;
                 }
             }
             x = (int) tokens.get(0).asInt();
             y = (int) tokens.get(1).asInt();
+            if(x <= 0 || y <= 0){
+                x = y = 0;
+                System.out.printf("Please enter two positive Integers\n");
+            }
         }
 
         return new Grid(x,y);
@@ -42,7 +44,7 @@ class Application {
 
     public static void main(final String[] args) {
 
-        Grid agrid = selectGridSize();
+        Grid aGrid = selectGridSize();
 
 
         }

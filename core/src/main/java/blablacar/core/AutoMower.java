@@ -6,31 +6,20 @@ import blablacar.core.parser.Token;
 import java.util.List;
 
 public class AutoMower {
-    private int coordX;
-    private int coordY;
+    private Point localisation;
     private Directions orientation;
 
-    public AutoMower() {
-        this.coordX = 0;
-        this.coordY = 0;
+    public AutoMower(int coordXMax, int coordYMax) {
+        this.localisation = new Point(0,0,coordXMax,coordYMax);
         this.orientation = new North();
     }
 
-
-    private int getCoordX() {
-        return coordX;
+    public Point getLocalisation() {
+        return localisation;
     }
 
-    private void setCoordX(int coordX) {
-        this.coordX = coordX;
-    }
-
-    private int getCoordY() {
-        return coordY;
-    }
-
-    private void setCoordY(int coordY) {
-        this.coordY = coordY;
+    public void setLocalisation(Point localisation) {
+        this.localisation = localisation;
     }
 
     private Directions getOrientation() {
@@ -46,13 +35,48 @@ public class AutoMower {
         final List<Token> tokens = aParser.parse(movements);
         for(Token tok : tokens) {
             if (tok.getValue() == "L") {
-                getOrientation().turnLeft();
+                setOrientation(getOrientation().turnLeft());
             }else if(tok.getValue() == "R") {
-                getOrientation().turnRight();
+                setOrientation(getOrientation().turnRight());
             }else if(tok.getValue() == "F"){
+                goForward(getOrientation().toString());
+            }else if(tok.getValue() == "B") {
+                goBackwards(getOrientation().toString());
             }
-            else if(tok.getValue() == "B") {
-            }
+        }
+    }
+
+    private void goBackwards(String orientation) {
+        switch (orientation) {
+            case "N":
+                getLocalisation().setCoordY(getLocalisation().getCoordY()-1);
+                break;
+            case "W":
+                getLocalisation().setCoordX(getLocalisation().getCoordX()+1);
+                break;
+            case "E":
+                getLocalisation().setCoordX(getLocalisation().getCoordX()-1);
+                break;
+            case "S":
+                getLocalisation().setCoordY(getLocalisation().getCoordY()+1);
+                break;
+        }
+    }
+
+    private void goForward(String orientation) {
+        switch (orientation) {
+            case "N":
+                getLocalisation().setCoordY(getLocalisation().getCoordY()+1);
+                break;
+            case "W":
+                getLocalisation().setCoordX(getLocalisation().getCoordX()-1);
+                break;
+            case "E":
+                getLocalisation().setCoordX(getLocalisation().getCoordX()+1);
+                break;
+            case "S":
+                getLocalisation().setCoordY(getLocalisation().getCoordY()-1);
+                break;
         }
     }
 

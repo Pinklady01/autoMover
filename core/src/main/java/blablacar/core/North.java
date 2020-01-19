@@ -1,6 +1,6 @@
 package blablacar.core;
 
-public class North implements Directions, Mouvements{
+public class North implements Directions{
     @Override
     public Directions turnLeft() {
         return new West();
@@ -12,12 +12,7 @@ public class North implements Directions, Mouvements{
     }
 
     @Override
-    public int goForward() {
-        return 0;
-    }
-
-    @Override
-    public int goBackwards() {
-        return 0;
+    public String toString() {
+        return "N";
     }
 }
