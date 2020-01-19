@@ -4,11 +4,6 @@
     <list default="true" id="1f8c35fe-9b3e-4051-998f-875155917a66" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cli/src/main/java/blablacar/cli/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/cli/src/main/java/blablacar/cli/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cli/testMower" beforeDir="false" afterPath="$PROJECT_DIR$/cli/testMower" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/blablacar/core/AutoMower.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/blablacar/core/AutoMower.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/blablacar/core/Grid.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/blablacar/core/Grid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/blablacar/core/parser/FileToParse.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/blablacar/core/parser/File.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/blablacar/core/parser/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/blablacar/core/parser/Parser.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,7 +62,7 @@
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="blablacar.cli.Application" />
       <module name="autoMower.cli" />
-      <option name="PROGRAM_PARAMETERS" value="./cli/testMower" />
+      <option name="PROGRAM_PARAMETERS" value="./cli/testMower ./cli/output.txt" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="blablacar.cli.*" />
@@ -174,7 +169,7 @@
       <workItem from="1579266225301" duration="962000" />
       <workItem from="1579271197899" duration="3952000" />
       <workItem from="1579381383988" duration="18912000" />
-      <workItem from="1579456053383" duration="11987000" />
+      <workItem from="1579456053383" duration="12145000" />
     </task>
     <task id="LOCAL-00001" summary="Creation of the AutoMover,the CardinanalPoint enum and the Grid class.">
       <created>1579384257499</created>
@@ -225,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579471334182</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Write on an output file, the results">
+      <created>1579475762637</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1579475762637</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,7 +254,8 @@
     <MESSAGE value="goForward and goBackward functions" />
     <MESSAGE value="Add a List of AutoMowers into the Grid class" />
     <MESSAGE value="Add a FileToParse class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add a FileToParse class" />
+    <MESSAGE value="Write on an output file, the results" />
+    <option name="LAST_COMMIT_MESSAGE" value="Write on an output file, the results" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

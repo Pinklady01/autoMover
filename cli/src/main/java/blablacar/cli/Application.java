@@ -12,7 +12,7 @@ class Application {
         } else {
             File input = new File(args[0]);
             Grid aGrid = input.parseFile();
-            File output = new File("./cli/output.txt");
+            File output = new File(args[1]);
             output.writeFile("Results\n"+aGrid.toString());
         }
     }
