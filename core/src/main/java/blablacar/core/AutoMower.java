@@ -9,9 +9,19 @@ public class AutoMower {
     private Point localisation;
     private Directions orientation;
 
-    public AutoMower(int coordX, int coordY, int coordXMax, int coordYMax) {
+    public AutoMower(int coordX, int coordY, int coordXMax, int coordYMax, String orientation) {
         this.localisation = new Point(coordX,coordY,coordXMax,coordYMax);
-        this.orientation = new North();
+        switch(orientation){
+            case "N": this.orientation = new North();
+                break;
+            case "S": this.orientation = new South();
+                break;
+            case "W": this.orientation = new West();
+                break;
+            case "E": this.orientation = new East();
+                break;
+        }
+
     }
 
     public Point getLocalisation() {
@@ -30,7 +40,7 @@ public class AutoMower {
         this.orientation = orientation;
     }
 
-    private void move(final String movements){
+    public void move(final String movements){
         Parser aParser = new Parser();
         final List<Token> tokens = aParser.parse(movements);
         for(Token tok : tokens) {

@@ -7,11 +7,9 @@ public class Grid {
     private int coordYMax;
     private ArrayList<AutoMower> autoMowers = new ArrayList<AutoMower>();
 
-    public Grid(int coordX, int coordY, int coordXMax, int coordYMax) {
+    public Grid(int coordXMax, int coordYMax) {
         this.coordXMax = coordXMax;
         this.coordYMax = coordYMax;
-        AutoMower anAutoMower = new AutoMower(coordX,coordY,coordXMax,coordYMax);
-        this.autoMowers.add(anAutoMower);
     }
 
     public ArrayList<AutoMower> getAutoMowers() {
@@ -36,7 +34,7 @@ public class Grid {
     }
 
 
-    private int getCoordXMax() {
+    public int getCoordXMax() {
         return coordXMax;
     }
 
@@ -44,7 +42,7 @@ public class Grid {
         this.coordXMax = coordXMax;
     }
 
-    private int getCoordYMax() {
+    public int getCoordYMax() {
         return coordYMax;
     }
 
