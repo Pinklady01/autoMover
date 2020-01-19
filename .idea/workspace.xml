@@ -1,15 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1f8c35fe-9b3e-4051-998f-875155917a66" name="Default Changelist" comment="">
+    <list default="true" id="1f8c35fe-9b3e-4051-998f-875155917a66" name="Default Changelist" comment="Creation of the grid size from input">
+      <change afterPath="$PROJECT_DIR$/autoMower.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/blablacar/core/Mouvements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/blablacar/core/AutoMover.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/blablacar/core/AutoMover.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/blablacar/core/CardinalPoint.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cli/autoMover.cli.iml" beforeDir="false" afterPath="$PROJECT_DIR$/cli/autoMower.cli.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cli/src/main/java/blablacar/cli/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/cli/src/main/java/blablacar/cli/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/autoMover.core.iml" beforeDir="false" afterPath="$PROJECT_DIR$/core/autoMower.core.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/blablacar/core/AutoMover.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/blablacar/core/AutoMower.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/main/java/blablacar/core/Directions.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/blablacar/core/Directions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/main/java/blablacar/core/East.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/blablacar/core/East.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/blablacar/core/Grid.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/blablacar/core/Grid.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/main/java/blablacar/core/North.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/blablacar/core/North.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/main/java/blablacar/core/South.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/blablacar/core/South.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/main/java/blablacar/core/West.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/blablacar/core/West.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/blablacar/core/parser/Token.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/blablacar/core/parser/Token.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,8 +29,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -58,10 +66,10 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Maven.autoMover [clean,package]">
+  <component name="RunManager" selected="Application.Application">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="blablacar.cli.Application" />
-      <module name="autoMover.cli" />
+      <module name="autoMower.cli" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="blablacar.cli.*" />
@@ -73,7 +81,7 @@
       </method>
     </configuration>
     <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
-      <module name="autoMover.cli" />
+      <module name="autoMower.cli" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -86,7 +94,7 @@
       </method>
     </configuration>
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
-      <module name="autoMover.cli" />
+      <module name="autoMower.cli" />
       <option name="filePath" />
       <option name="vmParameters" />
       <option name="alternativeJrePath" />
@@ -167,7 +175,7 @@
       <updated>1579266223079</updated>
       <workItem from="1579266225301" duration="962000" />
       <workItem from="1579271197899" duration="3952000" />
-      <workItem from="1579381383988" duration="6175000" />
+      <workItem from="1579381383988" duration="13089000" />
     </task>
     <task id="LOCAL-00001" summary="Creation of the AutoMover,the CardinanalPoint enum and the Grid class.">
       <created>1579384257499</created>
@@ -183,7 +191,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579385662603</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Modification of the orientation's classes">
+      <created>1579388464167</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1579388464167</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,6 +218,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Creation of the AutoMover,the CardinanalPoint enum and the Grid class." />
     <MESSAGE value="Add the Interface Directions and the orientations classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add the Interface Directions and the orientations classes" />
+    <MESSAGE value="Modification of the orientation's classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modification of the orientation's classes" />
   </component>
 </project>

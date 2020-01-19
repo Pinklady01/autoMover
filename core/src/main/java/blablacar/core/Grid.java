@@ -3,25 +3,27 @@ package blablacar.core;
 public class Grid {
     private int coordXMax;
     private int coordYMax;
+    private AutoMower anAutoMower;
 
     public Grid(int coordXMax, int coordYMax) {
         this.coordXMax = coordXMax;
         this.coordYMax = coordYMax;
+        this.anAutoMower = new AutoMower();
     }
 
-    public int getCoordXMax() {
+    private int getCoordXMax() {
         return coordXMax;
     }
 
-    public void setCoordXMax(int coordXMax) {
+    private void setCoordXMax(int coordXMax) {
         this.coordXMax = coordXMax;
     }
 
-    public int getCoordYMax() {
+    private int getCoordYMax() {
         return coordYMax;
     }
 
-    public void setCoordYMax(int coordYMax) {
+    private void setCoordYMax(int coordYMax) {
         this.coordYMax = coordYMax;
     }
 }

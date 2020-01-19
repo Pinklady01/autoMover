@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/cli/autoMover.cli.iml" filepath="$PROJECT_DIR$/cli/autoMover.cli.iml" />
-      <module fileurl="file://$PROJECT_DIR$/core/autoMover.core.iml" filepath="$PROJECT_DIR$/core/autoMover.core.iml" />
-      <module fileurl="file://$PROJECT_DIR$/rpn.iml" filepath="$PROJECT_DIR$/rpn.iml" />
+      <module fileurl="file://$PROJECT_DIR$/autoMower.iml" filepath="$PROJECT_DIR$/autoMower.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cli/autoMower.cli.iml" filepath="$PROJECT_DIR$/cli/autoMower.cli.iml" />
+      <module fileurl="file://$PROJECT_DIR$/core/autoMower.core.iml" filepath="$PROJECT_DIR$/core/autoMower.core.iml" />
     </modules>
   </component>
 </project>

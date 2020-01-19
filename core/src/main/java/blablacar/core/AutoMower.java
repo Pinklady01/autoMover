@@ -5,42 +5,43 @@ import blablacar.core.parser.Token;
 
 import java.util.List;
 
-public class AutoMover {
+public class AutoMower {
     private int coordX;
     private int coordY;
     private Directions orientation;
 
-    public AutoMover() {
+    public AutoMower() {
         this.coordX = 0;
         this.coordY = 0;
         this.orientation = new North();
     }
 
-    public int getCoordX() {
+
+    private int getCoordX() {
         return coordX;
     }
 
-    public void setCoordX(int coordX) {
+    private void setCoordX(int coordX) {
         this.coordX = coordX;
     }
 
-    public int getCoordY() {
+    private int getCoordY() {
         return coordY;
     }
 
-    public void setCoordY(int coordY) {
+    private void setCoordY(int coordY) {
         this.coordY = coordY;
     }
 
-    public Directions getOrientation() {
+    private Directions getOrientation() {
         return orientation;
     }
 
-    public void setOrientation(Directions orientation) {
+    private void setOrientation(Directions orientation) {
         this.orientation = orientation;
     }
 
-    public void move(final String movements){
+    private void move(final String movements){
         Parser aParser = new Parser();
         final List<Token> tokens = aParser.parse(movements);
         for(Token tok : tokens) {
