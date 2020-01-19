@@ -42,15 +42,15 @@ public class AutoMower {
 
     public void move(final String movements){
         Parser aParser = new Parser();
-        final List<Token> tokens = aParser.parse(movements);
+        final List<Token> tokens = aParser.parseEachChar(movements);
         for(Token tok : tokens) {
-            if (tok.getValue() == "L") {
+            if (tok.getValue().equals("L")) {
                 setOrientation(getOrientation().turnLeft());
-            }else if(tok.getValue() == "R") {
+            }else if(tok.getValue().equals("R")) {
                 setOrientation(getOrientation().turnRight());
-            }else if(tok.getValue() == "F"){
+            }else if(tok.getValue().equals("F")){
                 goForward(getOrientation().toString());
-            }else if(tok.getValue() == "B") {
+            }else if(tok.getValue().equals("B")) {
                 goBackwards(getOrientation().toString());
             }
         }

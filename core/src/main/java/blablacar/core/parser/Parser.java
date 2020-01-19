@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Parser {
 
-    public List<Token> parse(final String instructions){
+    public List<Token> parseFromSpaces(final String instructions){
         final String[] values = instructions.split(" ");
         final List<Token> tokens = new ArrayList<Token>();
 
@@ -14,5 +14,15 @@ public class Parser {
         }
         return tokens;
     }
+
+    public List<Token> parseEachChar(final String instructions){
+        final List<Token> tokens = new ArrayList<Token>();
+        for(int i = 0; i < instructions.length(); i++){
+            tokens.add(new Token((instructions.charAt(i)+"")));
+        }
+        return tokens;
+    }
+
+
 
 }

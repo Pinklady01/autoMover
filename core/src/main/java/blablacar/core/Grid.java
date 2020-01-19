@@ -33,6 +33,14 @@ public class Grid {
         return false;
     }
 
+    @Override
+    public String toString() {
+        String str ="";
+        for(int i = 0; i < autoMowers.size();i++){
+            str += autoMowers.get(i).toString()+"\n";
+        }
+        return str;
+    }
 
     public int getCoordXMax() {
         return coordXMax;
