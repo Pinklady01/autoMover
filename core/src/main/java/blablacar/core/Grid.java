@@ -1,15 +1,40 @@
 package blablacar.core;
 
+import java.util.ArrayList;
+
 public class Grid {
     private int coordXMax;
     private int coordYMax;
-    private AutoMower anAutoMower;
+    private ArrayList<AutoMower> autoMowers = new ArrayList<AutoMower>();
 
-    public Grid(int coordXMax, int coordYMax) {
+    public Grid(int coordX, int coordY, int coordXMax, int coordYMax) {
         this.coordXMax = coordXMax;
         this.coordYMax = coordYMax;
-        this.anAutoMower = new AutoMower(coordXMax,coordYMax);
+        AutoMower anAutoMower = new AutoMower(coordX,coordY,coordXMax,coordYMax);
+        this.autoMowers.add(anAutoMower);
     }
+
+    public ArrayList<AutoMower> getAutoMowers() {
+        return autoMowers;
+    }
+
+    public void setAutoMowers(ArrayList<AutoMower> autoMowers) {
+        this.autoMowers = autoMowers;
+    }
+
+    public void addAnAutoMowers(AutoMower autoMower){
+        if(!this.containsAutoMower(autoMower)){
+            this.autoMowers.add(autoMower);
+        }
+    }
+
+    public boolean containsAutoMower(AutoMower autoMower){
+        if(this.getAutoMowers().contains(autoMower)){
+            return true;
+        }
+        return false;
+    }
+
 
     private int getCoordXMax() {
         return coordXMax;

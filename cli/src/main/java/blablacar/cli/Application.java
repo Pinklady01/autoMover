@@ -4,6 +4,8 @@ import blablacar.core.Grid;
 import blablacar.core.parser.Parser;
 import blablacar.core.parser.Token;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.List;
 import java.util.Scanner;
 
@@ -43,8 +45,15 @@ class Application {
     }
 
     public static void main(final String[] args) {
+        if(args.length == 0) {
+            System.out.println("no arguments were given.");
+        }else{
+            File file = new File(args[0]);
+            Grid aGrid = selectGridSize();
 
-        Grid aGrid = selectGridSize();
+        }
+
+
 
 
         }

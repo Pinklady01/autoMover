@@ -37,6 +37,7 @@ public class Point {
         if(coordX <= this.coordXMax){
             this.coordX = coordX;
         }
+        if(this.coordX < 0){this.coordX = 0;}
     }
 
     public int getCoordY() {
@@ -47,7 +48,11 @@ public class Point {
         if(coordY <= this.coordYMax){
             this.coordY = coordY;
         }
+        if(this.coordY < 0){this.coordY = 0;}
     }
 
-
+    @Override
+    public String toString() {
+        return coordX +" "+coordY+" ";
+    }
 }

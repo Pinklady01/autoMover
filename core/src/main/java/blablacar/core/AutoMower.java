@@ -9,8 +9,8 @@ public class AutoMower {
     private Point localisation;
     private Directions orientation;
 
-    public AutoMower(int coordXMax, int coordYMax) {
-        this.localisation = new Point(0,0,coordXMax,coordYMax);
+    public AutoMower(int coordX, int coordY, int coordXMax, int coordYMax) {
+        this.localisation = new Point(coordX,coordY,coordXMax,coordYMax);
         this.orientation = new North();
     }
 
@@ -44,7 +44,9 @@ public class AutoMower {
                 goBackwards(getOrientation().toString());
             }
         }
+        this.toString();
     }
+
 
     private void goBackwards(String orientation) {
         switch (orientation) {
@@ -80,4 +82,8 @@ public class AutoMower {
         }
     }
 
+    @Override
+    public String toString() {
+        return this.localisation.toString()+this.orientation.toString();
+    }
 }

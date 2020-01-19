@@ -2,17 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f8c35fe-9b3e-4051-998f-875155917a66" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/blablacar/core/Point.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli/testMower" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cli/src/main/java/blablacar/cli/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/cli/src/main/java/blablacar/cli/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/main/java/blablacar/core/AutoMower.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/blablacar/core/AutoMower.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/blablacar/core/Directions.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/blablacar/core/Directions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/blablacar/core/East.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/blablacar/core/East.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/main/java/blablacar/core/Grid.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/blablacar/core/Grid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/blablacar/core/Mouvements.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/blablacar/core/North.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/blablacar/core/North.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/blablacar/core/South.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/blablacar/core/South.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/blablacar/core/West.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/blablacar/core/West.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/blablacar/core/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/blablacar/core/Point.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/blablacar/core/parser/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/blablacar/core/parser/Parser.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -65,6 +61,7 @@
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="blablacar.cli.Application" />
       <module name="autoMower.cli" />
+      <option name="PROGRAM_PARAMETERS" value="cli/testMower.txt" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="blablacar.cli.*" />
@@ -171,6 +168,7 @@
       <workItem from="1579266225301" duration="962000" />
       <workItem from="1579271197899" duration="3952000" />
       <workItem from="1579381383988" duration="18912000" />
+      <workItem from="1579456053383" duration="3010000" />
     </task>
     <task id="LOCAL-00001" summary="Creation of the AutoMover,the CardinanalPoint enum and the Grid class.">
       <created>1579384257499</created>
@@ -200,7 +198,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579449973724</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="goForward and goBackward functions">
+      <created>1579456112928</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1579456112928</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,7 +216,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -222,6 +229,7 @@
     <MESSAGE value="Add the Interface Directions and the orientations classes" />
     <MESSAGE value="Modification of the orientation's classes" />
     <MESSAGE value="Creation of the grid from the input of its size" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creation of the grid from the input of its size" />
+    <MESSAGE value="goForward and goBackward functions" />
+    <option name="LAST_COMMIT_MESSAGE" value="goForward and goBackward functions" />
   </component>
 </project>
